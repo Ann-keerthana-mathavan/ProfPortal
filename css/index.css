@@ -1,0 +1,144 @@
+:root {
+  --primary-color: #035abd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f6f6;
+}
+html {
+  text-transform: capitalize !important;
+}
+.nav-item a:hover {
+  visibility: visible;
+  width: 100%;
+}
+.logo {
+  width: 60px;
+}
+
+nav {
+  background: linear-gradient(to right, #3cd0ff, #f6f6f6);
+}
+.navbar-toggler {
+  color: black;
+}
+
+.nav-link {
+  color: black;
+  text-indent: 25px;
+}
+.home {
+  background-color: #c4e0f9;
+  border-radius: 0 0 50px 50px;
+}
+.welcome-text {
+  font-size: 45px;
+  margin-left: 5px;
+}
+.title {
+  color: var(--primary-color);
+}
+.sub-text {
+  font-size: 18px;
+  font-weight: 100;
+  color: var(--primary-color);
+  margin-left: 5px;
+}
+.login-btn {
+  background-color: #1c8cf0 !important;
+  width: 30%;
+  text-transform: capitalize !important;
+  border-radius: 15px;
+}
+
+/* service page */
+
+.service {
+  background-color: #f6f6f6;
+}
+.service-text {
+  color: var(--primary-color);
+  font-size: 52px;
+  margin-top: 10px;
+}
+.card-img {
+  width: auto;
+  height: auto;
+  margin-top: 5px;
+}
+
+.service-card {
+  background-color: #ffffff;
+  height: 300px;
+  width: 280px;
+  border-radius: 25px;
+}
+.card-heading {
+  font-size: 20px;
+  color: #000000;
+}
+.card-sub-text {
+  font-size: 15px;
+  color: var(--primary-color);
+}
+/* contact us */
+.contactUs {
+  background-color: #c4e0f9;
+  border-radius: 50px 50px 0 0;
+}
+.contact-text {
+  font-size: 52px;
+  color: var(--primary-color);
+}
+.contactUs-card {
+  border-radius: 25px;
+  background-color: transparent;
+  border: none;
+}
+.contactUs-btn {
+  padding: 10px !important;
+  background-color: #1c8cf0 !important;
+  border-radius: 25px;
+  width: 100%;
+}
+.contactUs-input {
+  background-color: #9bbdf9;
+  border-radius: 20px;
+}
+.icons {
+  width: 25px;
+  margin-left: 5px;
+}
+/* google map */
+.mapouter {
+  position: relative;
+  height: 240px;
+  width: 360px;
+  background: #fff;
+  margin-top: 15px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  height: 240px;
+  width: 360px;
+}
+.gmap_canvas iframe {
+  position: relative;
+  z-index: 2;
+}
+/* footer */
+footer {
+  background-color: var(--primary-color);
+  font-size: 15px;
+  height: 50px;
+  color: #ffffff;
+}
+.copy-rigth-text {
+  margin-top: 10px;
+}
