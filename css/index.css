@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: pointer;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -33,9 +34,11 @@ nav {
   color: black;
   text-indent: 25px;
 }
+
 .home {
   background-color: #c4e0f9;
   border-radius: 0 0 50px 50px;
+  height: 80vh;
 }
 .welcome-text {
   font-size: 45px;
@@ -54,13 +57,20 @@ nav {
   background-color: #1c8cf0 !important;
   width: 30%;
   text-transform: capitalize !important;
-  border-radius: 15px;
+  border-radius: 12px;
+  transition: 0.5s;
+}
+.login-btn:hover {
+  background-color: transparent !important;
+  border: 1px solid #000000 !important;
+  color: #000000;
 }
 
 /* service page */
 
 .service {
   background-color: #f6f6f6;
+  height: 92vh;
 }
 .service-text {
   color: var(--primary-color);
@@ -74,9 +84,10 @@ nav {
 }
 
 .service-card {
+  text-align: center;
   background-color: #ffffff;
   height: 300px;
-  width: 280px;
+  width: 300px;
   border-radius: 25px;
 }
 .card-heading {
@@ -134,10 +145,10 @@ nav {
 }
 /* footer */
 footer {
-  background-color: var(--primary-color);
+  background-color: #6caeff;
   font-size: 15px;
   height: 50px;
-  color: #ffffff;
+  color: #000000;
 }
 .copy-rigth-text {
   margin-top: 10px;
