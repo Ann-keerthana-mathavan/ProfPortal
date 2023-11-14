@@ -90,6 +90,12 @@ nav {
   width: 300px;
   border-radius: 25px;
 }
+.card {
+  transition: 0.4s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
 .card-heading {
   font-size: 20px;
   color: #000000;
