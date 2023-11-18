@@ -1,0 +1,68 @@
+:root {
+  --primary-color: #035abd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f6f6;
+}
+html {
+  text-transform: capitalize !important;
+}
+.nav {
+  height: 90px;
+  background: linear-gradient(to right, #3cd0ff, #f6f6f6);
+}
+.logo {
+  width: 80px;
+  height: 60px;
+}
+.userIcon {
+  width: 40px;
+  height: 40px;
+}
+.profile-pic {
+  margin-top: 3px;
+}
+.userName {
+  padding-top: 15px;
+}
+/* header end */
+.title-text {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+.btn-back {
+  border: none;
+  background-color: none !important;
+  width: 50px;
+  border-radius: 50%;
+}
+.title-div {
+  margin-top: 40px;
+}
+/* footer */
+.footer {
+  background-color: #c5e1f9;
+  border-radius: 50px 50px 0 0;
+}
+.icons {
+  width: 25px;
+  margin-left: 5px;
+}
+
+.btn-request {
+  background-color: #1c8cf0 !important;
+  width: 100% !important;
+  text-transform: capitalize !important;
+}
+/* calander */
+.card {
+  background-color: #f4f2f3 !important;
+}

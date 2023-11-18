@@ -1,0 +1,92 @@
+:root {
+  --primary-color: #035abd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f6f6;
+}
+html {
+  text-transform: capitalize !important;
+}
+.nav {
+  height: 90px;
+  background: linear-gradient(to right, #3cd0ff, #f6f6f6);
+}
+.logo {
+  width: 80px;
+  height: 60px;
+}
+.userIcon {
+  width: 40px;
+  height: 40px;
+}
+.profile-pic {
+  margin-top: 3px;
+}
+.userName {
+  padding-top: 15px;
+}
+/* header end */
+
+.title-text {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+.btn-back {
+  border: none;
+  background-color: none !important;
+  border-radius: 50%;
+}
+.title-div {
+  margin-top: 40px;
+}
+.card-img {
+  width: 70px;
+  border-radius: 50%;
+  margin: 10px 10px;
+}
+.card-sub-text {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.card-body {
+  margin-top: 10px;
+}
+.task-card {
+  border-radius: 25px;
+  height: 300px;
+  transition: 0.4s;
+}
+.task-card:hover {
+  background-color: #b3d6fe;
+  transform: scale(1.1);
+  box-shadow: 22px 18px 15px -2px rgba(0, 0, 0, 0.1);
+}
+.nav-link {
+  color: var(--primary-color);
+  text-align: right;
+}
+/* footer */
+.footer {
+  background-color: #c5e1f9;
+  border-radius: 50px 50px 0 0;
+}
+.icons {
+  width: 25px;
+  margin-left: 5px;
+}
+.notification-bar {
+  background-color: #d9d9d9;
+  height: 90px;
+  border-radius: 10px 10px 0 0;
+}
+.noti-icon {
+  width: 20px;
+}
