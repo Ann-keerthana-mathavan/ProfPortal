@@ -1,5 +1,7 @@
 :root {
   --primary-color: #035abd;
+  --title-color: #0659b7;
+  --border-color: #0a61c2;
 }
 
 * {
