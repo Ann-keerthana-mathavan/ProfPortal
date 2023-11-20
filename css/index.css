@@ -1,20 +1,5 @@
-:root {
-  --primary-color: #035abd;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #f6f6f6;
-}
-html {
-  text-transform: capitalize !important;
-}
+/* import css main styles that reduntant  */
+@import url("./main.css");
 .nav-item a:hover {
   visibility: visible;
   width: 100%;
@@ -34,7 +19,10 @@ nav {
   color: black;
   text-indent: 25px;
 }
-
+.nav-item {
+  margin-right: 50px;
+  font-size: 20px;
+}
 .home {
   background-color: #c4e0f9;
   border-radius: 0 0 50px 50px;
@@ -89,11 +77,10 @@ nav {
   height: 300px;
   width: 300px;
   border-radius: 25px;
-}
-.card {
   transition: 0.4s;
 }
-.card:hover {
+
+.service-card:hover {
   transform: scale(1.1);
 }
 .card-heading {
@@ -158,4 +145,211 @@ footer {
 }
 .copy-rigth-text {
   margin-top: 10px;
+}
+/* sign in page */
+.sign-in-icon {
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+.modal-dialog-centered {
+  margin: auto;
+}
+
+.modal-content {
+  border-radius: 35px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.modal-header {
+  border-bottom: none;
+  display: flex;
+}
+
+.modal-title {
+  color: var(--title-color);
+  flex: 6;
+  text-align: center;
+}
+.btn-close-top {
+  flex: 1;
+  background-color: white;
+}
+
+.sign-in-icon-close {
+  width: 40px;
+  height: 40px;
+}
+
+.btn-close-top,
+.btn-close-top:active,
+.btn-close-top:focus {
+  border: none !important;
+}
+
+.input-group-text-icon {
+  border: none;
+  border-bottom: 3px var(--border-color) solid;
+  background-color: white;
+  border-radius: 0%;
+}
+
+.form-control-input {
+  border: none;
+  border-bottom: 3px var(--border-color) solid;
+  border-radius: 0%;
+}
+
+.form-control-input:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.eye-icon {
+  border-bottom: 3px var(--border-color) solid;
+}
+
+.btn-forget-password {
+  background-color: white;
+  color: black;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-forget-password:hover {
+  transform: scale(1.1);
+}
+
+.modal-footer {
+  border: none;
+}
+
+.btn-sign-in {
+  width: 100%;
+  border-radius: 10px;
+}
+/* modal overlay*/
+.hidden {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  transition: all 0.5s;
+}
+.box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+/* reset password modal */
+
+.resetPassModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1100;
+  transition: all 0.5s;
+}
+
+.reset-content {
+  border-radius: 35px;
+  width: 80%;
+  padding: 2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.reset-modal-title {
+  color: var(--title-sub);
+  flex: 8;
+  text-align: left !important;
+  padding-left: 10px;
+}
+
+.reset-btn-close {
+  flex: 1;
+  background-color: white;
+  padding-left: 260px;
+  padding-right: 10px;
+}
+
+.reset-icon-close {
+  width: 25px;
+  height: 25px;
+  border: none;
+  margin-left: 20px;
+}
+
+.reset-btn-close,
+.reset-btn-close:active,
+.reset-btn-close:focus {
+  border: none !important;
+}
+
+.reset-body {
+  padding: 50px 20px 50px 20px !important;
+}
+
+.reset-title {
+  color: var(--title-color);
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.input-group-reset {
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  padding: 20px 20px 0px 20px;
+  outline: none;
+}
+
+.input-group-para-reset {
+  padding: 25px 0 15px 0;
+  text-align: center;
+}
+
+.email-input-reset {
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.email-input-label-reset {
+  width: 100%;
+  height: 40px;
+}
+
+.email-input-label-reset:focus {
+  outline: none;
+}
+
+.reset-footer {
+  border: none;
+  padding: 0%;
+  margin-top: 0%;
+  padding: 0px 15px 0px 15px;
+}
+
+.reset-btn {
+  width: 100%;
+  text-transform: capitalize;
+  margin-top: 10px !important;
+  border-radius: 0%;
+}
+.modal-backdrop.show {
+  opacity: 0;
 }
