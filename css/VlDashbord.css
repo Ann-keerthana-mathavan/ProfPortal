@@ -1,4 +1,5 @@
-@import url(./main.css);
+/* import css main styles that reduntant  */
+@import url("./main.css");
 .nav {
   height: 90px;
   background: linear-gradient(to right, #3cd0ff, #f6f6f6);
@@ -8,14 +9,14 @@
   height: 60px;
 }
 .userIcon {
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
 }
 .profile-pic {
   margin-top: 3px;
 }
 .userName {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 /* header end */
 
