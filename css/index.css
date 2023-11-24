@@ -26,10 +26,9 @@ nav {
 .home {
   background-color: #c4e0f9;
   border-radius: 0 0 50px 50px;
-  height: 80vh;
 }
 .welcome-text {
-  font-size: 45px;
+  font-size: 290%;
   margin-left: 5px;
 }
 .title {
@@ -58,11 +57,11 @@ nav {
 
 .service {
   background-color: #f6f6f6;
-  height: 92vh;
+  margin-bottom: 10rem;
 }
 .service-text {
   color: var(--primary-color);
-  font-size: 52px;
+  font-size: 290%;
   margin-top: 10px;
 }
 .card-img {
@@ -82,6 +81,7 @@ nav {
 
 .service-card:hover {
   transform: scale(1.1);
+  box-shadow: 22px 18px 15px -2px rgba(0, 0, 0, 0.1);
 }
 .card-heading {
   font-size: 20px;
@@ -95,9 +95,10 @@ nav {
 .contactUs {
   background-color: #c4e0f9;
   border-radius: 50px 50px 0 0;
+  margin-top: 50px !important;
 }
 .contact-text {
-  font-size: 52px;
+  font-size: 290%;
   color: var(--primary-color);
 }
 .contactUs-card {
@@ -118,6 +119,9 @@ nav {
 .icons {
   width: 25px;
   margin-left: 5px;
+}
+a {
+  text-decoration: none;
 }
 /* google map */
 .mapouter {
@@ -282,10 +286,8 @@ footer {
 }
 
 .reset-btn-close {
-  flex: 1;
   background-color: white;
   padding-left: 260px;
-  padding-right: 10px;
 }
 
 .reset-icon-close {
