@@ -25,10 +25,10 @@ $(document).ready(function () {
   function renderCalendars() {
     $("#calendar-container").empty();
 
-    var currentDate = new Date(currentYear, currentMonth, 1);
-    var daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+    let currentDate = new Date(currentYear, currentMonth, 1);
+    let daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
 
-    var calendarHTML =
+    let calendarHTML =
       '<div class="card card-calendar mb-4">' +
       '<h5 class="card-title text-center mt-3">' +
       new Intl.DateTimeFormat("en-US", {
@@ -58,12 +58,12 @@ $(document).ready(function () {
     $("#calendar-container").append(calendarHTML);
 
     // Update the calendar body
-    var calendarBody = $("#calendar-body");
+    let calendarBody = $("#calendar-body");
     calendarBody.empty();
 
-    var firstDay = new Date(currentYear, currentMonth, 1).getDay();
+    const firstDay = new Date(currentYear, currentMonth, 1).getDay();
 
-    for (var day = 1; day <= daysInMonth; day++) {
+    for (let day = 1; day <= daysInMonth; day++) {
       if ((day + firstDay - 1) % 7 === 0) {
         calendarBody.append("<tr>");
       }
@@ -77,7 +77,7 @@ $(document).ready(function () {
 
     // Fill in the remaining cells
     if (firstDay !== 0) {
-      for (var i = 0; i < 7 - ((daysInMonth + firstDay - 1) % 7); i++) {
+      for (let i = 0; i < 7 - ((daysInMonth + firstDay - 1) % 7); i++) {
         calendarBody.append("<td></td>");
       }
       calendarBody.append("</tr>");

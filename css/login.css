@@ -1,0 +1,109 @@
+/* sign in page */
+.sign-in-icon {
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+
+.modal-dialog-centered {
+  margin: auto;
+}
+
+.modal-content {
+  border-radius: 35px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.modal-header {
+  border-bottom: none;
+  display: flex;
+}
+
+.modal-title {
+  color: var(--title-color);
+  flex: 6;
+  text-align: center;
+}
+.btn-close-top {
+  flex: 1;
+  background-color: white;
+}
+
+.sign-in-icon-close {
+  width: 40px;
+  height: 40px;
+}
+
+.btn-close-top,
+.btn-close-top:active,
+.btn-close-top:focus {
+  border: none !important;
+}
+
+.input-group-text-icon {
+  border: none;
+  border-bottom: 3px var(--border-color) solid;
+  background-color: white;
+  border-radius: 0%;
+}
+
+.form-control-input {
+  border: none;
+  border-bottom: 3px var(--border-color) solid;
+  border-radius: 0%;
+}
+
+.form-control-input:focus {
+  border: none !important;
+  box-shadow: none !important;
+  outline: transparent;
+}
+
+.eye-icon {
+  border-bottom: 3px var(--border-color) solid;
+}
+
+.btn-forget-password {
+  background-color: white;
+  color: black;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-forget-password:hover {
+  transform: scale(1.1);
+}
+
+.modal-footer {
+  border: none;
+}
+
+.btn-sign-in {
+  width: 100%;
+  border-radius: 10px;
+}
+/* modal overlay*/
+.hidden {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  transition: all 0.5s;
+}
+.box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  transition: all 0.5s;
+}
