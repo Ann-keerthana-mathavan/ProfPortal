@@ -11,9 +11,6 @@
 nav {
   background: linear-gradient(to right, #3cd0ff, #f6f6f6);
 }
-.navbar-toggler {
-  color: black;
-}
 
 .nav-link {
   color: black;
@@ -44,7 +41,8 @@ nav {
   background-color: #1c8cf0 !important;
   width: 30%;
   text-transform: capitalize !important;
-  border-radius: 12px;
+  border-radius: 13px 0px 13px 13px !important;
+
   transition: 0.5s;
 }
 .login-btn:hover {
@@ -109,12 +107,17 @@ nav {
 .contactUs-btn {
   padding: 10px !important;
   background-color: #1c8cf0 !important;
-  border-radius: 25px;
+  border-radius: 12px;
   width: 100%;
+}
+.contactUs-btn:hover {
+  background-color: transparent !important;
+  border: 1px solid black;
+  color: #000000;
 }
 .contactUs-input {
   background-color: #9bbdf9;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 .icons {
   width: 25px;
@@ -125,7 +128,6 @@ a {
 }
 /* google map */
 .mapouter {
-  position: relative;
   height: 240px;
   width: 360px;
   background: #fff;
@@ -136,10 +138,7 @@ a {
   height: 240px;
   width: 360px;
 }
-.gmap_canvas iframe {
-  position: relative;
-  z-index: 2;
-}
+
 /* footer */
 footer {
   background-color: #6caeff;
@@ -210,6 +209,7 @@ footer {
 .form-control-input:focus {
   border: none !important;
   box-shadow: none !important;
+  outline: transparent;
 }
 
 .eye-icon {
@@ -336,7 +336,7 @@ footer {
 }
 
 .email-input-label-reset:focus {
-  outline: none;
+  outline: transparent !important;
 }
 
 .reset-footer {

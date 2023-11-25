@@ -9,7 +9,7 @@ const resetPassModal = document.querySelector(".resetPassModal");
 const resetPassBtn = document.querySelector(".btn-forget-password");
 const resetCloseBtn = document.querySelector(".reset-btn-close");
 const signBackBtn = document.querySelector(".back-sign-in");
-let passwordVisible = true;
+let passwordVisible = false;
 
 const openModal = function () {
   modal.classList.remove("hidden");
@@ -29,8 +29,17 @@ btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 // toggling password visibility
 toggleBtn.addEventListener("click", function () {
-  input.type = passwordVisible ? "text" : "password";
-  passwordVisible = !passwordVisible;
+  if (passwordVisible) {
+    input.setAttribute("type", "text");
+    toggleBtn.classList.remove("fa-eye-slash");
+    toggleBtn.classList.add("fa-eye");
+    passwordVisible = false;
+  } else {
+    input.setAttribute("type", "password");
+    toggleBtn.classList.remove("fa-eye");
+    toggleBtn.classList.add("fa-eye-slash");
+    passwordVisible = true;
+  }
 });
 // opening the password reset modal
 resetPassBtn.addEventListener("click", () => {
